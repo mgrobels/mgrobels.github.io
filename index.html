@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+	<head>
+	
+		<meta charset="UTF-8">
+		<title>KALKULATOR DIETY</title>
+		
+		<link type="text/css" rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/all.css">
+		<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+		
+		<script src="zegar.js"></script>
+		<script src="jquery-3.4.1.min.js"></script>
+		<script src="funkcje.js"></script>
+		
+	</head>
+	
+	<body onload="zegar(); ilosc_posilkow();">
+	
+		<nav id="pasek_gora">
+			<div id="title">
+				<h1>KALKULATOR DIETY 2020</h1>
+			</div>
+			<div id="zegar"></div>
+			<div style="clear:both;"></div>
+		</nav>
+		
+		<div id="panel">
+			<div class="przycisk">
+				<p>Ilość posiłków: </p><p id="ilosc_posilkow">3</p> 
+				<p>
+					<a onclick="ilosc_posilkow(2)"><i class="fas fa-chevron-circle-left"></i></a>
+					<a onclick="ilosc_posilkow(1)"><i class="fas fa-chevron-circle-right"></i></a>
+				</p>
+			</div>
+			<div style="clear:both;"></div>
+			<div class="przycisk">
+				<p>Ilość kalorii MAX: </p><p id="ilosc_kalorii">2000</p> 
+				<p>
+					<a onclick="ilosc_kalorii(2)"><i class="fas fa-chevron-circle-left"></i></a>
+					<a onclick="ilosc_kalorii(1)"><i class="fas fa-chevron-circle-right"></i></a>
+				</p>
+			</div>
+			<div style="clear:both;"></div>
+			<div class="przycisk">
+				<p>Ilość kalorii z obecnej diety: </p><p id="ile_kcal_z_obecnej_diety">0</p> 
+			</div>
+			<div style="clear:both;"></div>
+			<progress id="pasek_kalorii" value="0" max="2000" ></progress>
+			<div id="posilki_kontener"></div>
+			
+		</div>
+		
+		<footer id="stopka" class="footer">Kalkulator diety &copy; 2020
+		</footer>
+	
+	</body>
+	
+</html>
