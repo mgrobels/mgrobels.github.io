@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Michał Grobelski - Projekty GitHub</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="css/all.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<head>
+	
+	<body onload="czuwanie();">
+		<video autoplay muted loop id="background-video">
+			<source src="background-video.mp4" type="video/mp4">
+		</video>
+		<div id="container">
+		<br />
+			<div id="title"><h1>Michał Grobelski - Projekty GitHub</h1></div>
+		
+			<div class="small-container">
+				<i class="fas fa-user-tie"></i>
+				<p>O mnie</p>
+			</div>
+			
+			<a href="../WWW 03.2020 DIETA/index.html"><div class="small-container">
+				<i class="fas fa-folder-open"></i>
+				<p>Projekty</p>
+			</div></a>
+			
+			<div class="small-container">
+				<i class="fas fa-address-card"></i>
+				<p>CV</p>
+			</div>
+		</div>
+		
+		<script>
+			var szerokosc = ($('html').css('width'));
+			szerokosc=parseFloat(szerokosc)-30;
+			$('.small-container').css('width', (szerokosc/6)+"px");
+			$('.small-container').css('height', (szerokosc/6)+"px");
+			$('.small-container').css('margin-left', (szerokosc/12)+"px");
+			$('.small-container').css('margin-right', (szerokosc/12)+"px");
+			$('.fas').css('font-size', (szerokosc/12)+"px");
+		</script>
+	</body>
+	
+<html>
