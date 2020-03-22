@@ -2,22 +2,12 @@
 <html lang="pl">
 
 	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-161547615-1"></script>
-		<script>
- 			window.dataLayer = window.dataLayer || [];
-  			function gtag(){dataLayer.push(arguments);}
-  			gtag('js', new Date());
-
- 			gtag('config', 'UA-161547615-1');
-		</script>
 		<meta charset="UTF-8">
 		<title>Michał Grobelski - Projekty GitHub</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="stylesheet" href="css/all.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="projekty.js"></script>
-	<head>
+	</head>
 	
 	<body>
 		<video autoplay muted loop id="background-video">
@@ -32,7 +22,7 @@
 				<p>O mnie</p>
 			</div>
 			
-			<a href="#projekty"><div class="small-container" onclick="projekty();">
+			<a id="projekty-link"><div class="small-container" id="projekty-button">
 				<i class="fas fa-folder-open"></i>
 				<p>Projekty</p>
 			</div></a>
@@ -45,12 +35,7 @@
 			<div id="projekty"></div>
 		</div>
 		
-		<script>
-			if(parseFloat($('html').css('width'))<1200)
-			{
-				$('#title').html("<h1>Michał Grobelski<br />Projekty GitHub</h1>");
-			}
-		</script>
+		<script src="projekty.js"></script>
 	</body>
 	
-<html>
+</html>
