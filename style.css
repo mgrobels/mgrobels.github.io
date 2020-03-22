@@ -1,3 +1,9 @@
+html::-webkit-scrollbar {
+    display: none;
+	-ms-overflow-style: none;
+	
+}
+
 body
 {
 	margin: 0;
@@ -25,11 +31,11 @@ body
 	position: relative;
 	width: 100%;
 	color: white;
-	background-color: #fff3;
-	padding: 10px 0;
+	background-color: rgba(255, 255, 255, 0.2);
+	padding: 1vw 0;
 	margin-bottom: 25vh;
 	text-shadow: 0px 0px 10px black;
-	border-bottom: 5px solid #fff3;
+	border-bottom: 0.5vw solid rgba(255, 255, 255, 0.2);
 }
 
 #title h1
@@ -40,32 +46,128 @@ body
 .fas
 {
 	margin-top: 20%;
+	font-size: 7.5vw;
 }
 
-.small-container
+.small-container, .small-projekt
 {
+	width: 18vw;
+	height: 18vw;
+	margin: 0 7.3vw;
 	position: relative;
-	background-color: #fff5;
-	border: 5px solid #fff5;
+	background-color: rgba(255, 255, 255, 0.3333333333333333);
+	border: 0.25vw solid rgba(255, 255, 255, 0.3333333333333333);
 	float: left;
-	color: #fff5;
+	color: rgba(255, 255, 255, 0.3333333333333333);
 	box-shadow: inset 0px 0px 10px 0px black;
 	transition: 1s background-color, 2s border, 1s color, text-shadow 1s;
 }
 
-.small-container p
+.small-projekt
 {
-	margin-top: 10%;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.small-container p, .small-projekt p
+{
+	margin-top: 12.5%;
 	font-size: 1.75vw;
 	width: 100%;
-	background-color: #fff5;
+	background-color: rgba(255, 255, 255, 0.3333333333333333);
 	color: white;
 }
 
-.small-container:hover
+.small-projekt p
 {
-	background-color: #fffa;
+	margin-top: 37.5%;
+	box-shadow: 0px 0px 10px 0px black;
+	transition: 1s transform;
+}
+
+.small-container:hover , .small-container:focus, .small-container:active, .small-projekt:hover , .small-projekt:focus, .small-projekt:active
+{
+	background-color: rgba(255, 255, 255, 0.6666666666666666);
 	border-color: white;
 	color: white;
 	text-shadow: 0px 0px 10px black;
+}
+
+.small-projekt:hover, .small-projekt:focus, .small-projekt:active
+{
+		background-color: rgba(0, 0, 0, 0.3333333333333333);
+}
+
+.small-projekt:hover p, .small-projekt:focus p, .small-projekt:active p
+{
+		transform: scale(1.2);
+}
+
+.aktywne
+{
+	clear: both;
+	background-color: rgba(255, 255, 255, 0.3333333333333333);
+	border-bottom: 0.25vw solid rgba(255, 255, 255, 0.3333333333333333);
+	border-top: 0.25vw solid rgba(255, 255, 255, 0.3333333333333333);
+	box-shadow: 0px 0px 10px 0px black;
+	height: 30vw;
+}
+
+.projekty-naglowek
+{
+	text-align: center;
+	text-shadow: 0px 0px 20px black;
+	background-color: rgba(0,0,0,0.4);
+	width: 100%;
+	color: white;
+}
+
+.projekty-naglowek h2
+{
+	font-size: 2vw;
+	margin: 2vw 0;
+	border-bottom: solid 0.2vw black;
+}
+
+@media (max-width: 1200px)
+{
+	.small-container, .small-projekt
+	{
+		width: 50vw;
+		height: 50vw;
+		margin: 0 24vw 5vw 24vw;
+		border-width: 1vw;
+	}
+	
+	.fas
+	{
+		font-size: 20vw;
+		
+	}
+	
+	.small-container p, .small-projekt p
+	{
+		font-size: 6vw;
+	}
+	
+	#title
+	{
+		margin-bottom: 10vh;
+		border-bottom: 10px solid rgba(255, 255, 255, 0.2);
+	}
+	
+	#title h1
+	{
+		font-size: 7.5vw;
+	}
+	
+	.aktywne
+	{
+		height: 180vw;
+	}
+	
+	.projekty-naglowek h2
+	{
+		font-size: 5vw;
+	}
 }
