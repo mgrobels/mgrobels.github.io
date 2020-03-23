@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Kalkulator BMI</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../WWW 03.2020 GITHUB HOME PAGE/css/all.css">
+    </head>
+
+    <body>
+
+        <div id="pasek-gorny">
+            <div id="title">
+                <h1>Kalkulator BMI</h1>
+            </div>
+            <div id="menu">
+                <ul>
+                    <a href="../WWW 03.2020 GITHUB HOME PAGE/index.html"><li>STRONA GŁOWNA</li></a>
+                    <li id="o-stronie-click">O STRONIE</li>
+                </ul>
+            </div>
+        </div>
+
+            <div style="clear:both"></div>
+
+        <div id="container" class="fade-in">
+            <div id="hello"><h1 id="imie">Witaj użytkowniku!</h1><button id="zmien-imie"><i class="fas fa-user-cog"></i></button></div>
+            <form>
+                <h3>Waga: </h3><input id="waga" type="text" maxlength="3" size="3"><h3>kg</h3><br />
+                <h3>Wzrost: </h3><input id="wzrost" maxlength="3" size="3"><h3>cm</h3>
+            </form>
+            <div id="BMI">
+                <div id="BMI-tytul"></div>
+                <div id="BMI-wartosc"></div>
+                <div id="BMI-kategoria"></div>
+                <div id="BMI-wagaCiala"></div>
+                <div id="BMI-ryzykoChoroby"></div>
+            </div>
+            <button id="oblicz">OBLICZ BMI!</button>
+        </div>
+
+        <div id="o-stronie">
+
+        </div>
+
+        <footer>Michał Grobelski &copy; 2020</footer>
+
+        <script src="funkcje.js"></script>
+    </body>
+</html>
