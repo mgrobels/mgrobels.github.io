@@ -12,7 +12,7 @@ document.getElementById("projekty-button").addEventListener('click', function(){
 		+
 		'<a href="../WWW 03.2020 DIETA/index.html" target="_blank"><div class="small-projekt g"><p>KALKULATOR DIETETYCZNY</p></div></a>'
 		+
-		'<a href="../WWW 03.2020 KALKULATOR BMI/index.html" target="_blank"><div class="small-projekt b"><p>KALKULATOR<br />BMI</p></div></a>'
+		'<a href="../BMI/index.html" target="_blank"><div class="small-projekt b"><p>KALKULATOR<br />BMI</p></div></a>'
 		+
 		'<div class="small-projekt"></div>')
 		
