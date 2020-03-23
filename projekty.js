@@ -7,12 +7,12 @@ document.getElementById("projekty-button").addEventListener('click', function(){
 		console.log(projektyClick);
 		$('#projekty').addClass('aktywne');
 		$('.small-container').css('margin-bottom', '10vw');
-		
+		document.getElementById('projekty').classList.add('fade-in');
 		$('#projekty').html('<div id="projekty-naglowek"></div>'
 		+
-		'<a href="../WWW 03.2020 DIETA/index.html" target="_blank"><div class="small-projekt"><p>KALKULATOR DIETETYCZNY</p></div></a>'
+		'<a href="../WWW 03.2020 DIETA/index.html" target="_blank"><div class="small-projekt g"><p>KALKULATOR DIETETYCZNY</p></div></a>'
 		+
-		'<div class="small-projekt"></div>'
+		'<a href="../WWW 03.2020 KALKULATOR BMI/index.html" target="_blank"><div class="small-projekt b"><p>KALKULATOR<br />BMI</p></div></a>'
 		+
 		'<div class="small-projekt"></div>')
 		
@@ -23,6 +23,7 @@ document.getElementById("projekty-button").addEventListener('click', function(){
 	}	
 	else
 	{
+			document.getElementById('projekty').classList.remove('fade-in');
 			document.getElementById("projekty-link").removeAttribute('href');
 			document.getElementById("projekty-link").setAttribute("href", "#top");
 			$('#projekty').html('');
