@@ -14,7 +14,7 @@ document.getElementById("projekty-button").addEventListener('click', function(){
 		+
 		'<a href="../BMI/index.html" target="_blank"><div class="small-projekt b"><p>KALKULATOR<br />BMI</p></div></a>'
 		+
-		'<div class="small-projekt"></div>')
+		'<a href="../ZADANIA/Zegar tyka/index.html" target="_blank"><div class="small-projekt b"><p>ZEGAR<br />TYKA</p></div></a>')
 		
 		$('#projekty-naglowek').addClass('projekty-naglowek');
 		$('#projekty-naglowek').html('<h2>PROJEKTY</h2>');
