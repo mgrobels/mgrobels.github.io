@@ -20,7 +20,7 @@ function aktualnyCzas()
 	if(sekunda<10) sekunda="0"+sekunda;
 	
 	document.getElementById("goraB").innerHTML = godzina+":"+minuta+"<span>"+sekunda+"</span><br />"+dzien+"/"+miesiac+"/"+rok;
-	setTimeout(aktualnyCzas,100);
+	setTimeout(aktualnyCzas,1000);
 	
 	var wakacje = new Date('2020','06','27');
 	var czasDoWakacji = wakacje-data;
