@@ -103,6 +103,11 @@ body
 		background-color: rgba(71, 164, 216, 0.63);
 }
 
+.small-projekt.r:hover, .small-projekt.r:focus, .small-projekt.r:active
+{
+		background-color: rgba(185, 16, 16, 0.33);
+}
+
 .small-projekt:hover p, .small-projekt:focus p, .small-projekt:active p
 {
 		transform: scale(1.2);
