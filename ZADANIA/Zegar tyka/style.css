@@ -1,0 +1,107 @@
+body
+{
+	background-color: rgb(170,170,170);
+	font-family: monospace;
+	font-size: 30px;
+	text-align: center;
+}
+
+main
+{
+	margin: 0 auto;
+	border: 1px solid black;
+	background-color: white;
+	width: 1200px;
+	padding: 0;
+}
+
+span
+{
+	font-size: 20px;
+}
+
+p
+{
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+}
+
+.goraA
+{
+padding: 50px 0;
+float: left;
+width: 598px;
+margin: 0;
+border: 1px solid black;
+background-color: rgb(172, 185, 202);
+color: white;
+text-shadow: 0px 2px 3px black;
+}
+#goraB
+{
+padding: 32px 0;
+float: left;
+width: 598px;
+margin: 0;
+border: 1px solid black;
+background-color: rgb(213, 220, 228);
+font-style: italic;
+}
+.srodekA
+{
+padding: 50px 0;
+float: left;
+width: 398px;
+margin: 0;
+border: 1px solid black;	
+background-color: rgb(247, 202, 172);
+color: white;
+}
+.srodekB
+{
+padding: 50px 0;
+float: left;
+width: 398px;
+margin: 0;
+border: 1px solid black;	
+background-color: rgb(201, 201, 201);
+color: white;
+}
+.srodekC
+{
+padding: 50px 0;
+float: left;
+width: 398px;
+margin: 0;
+border: 1px solid black;	
+background-color: rgb(168, 208, 141);
+color: white;
+}
+#dolA
+{
+padding: 10px 0;
+float: left;
+width: 398px;
+margin: 0;
+border: 1px solid black;	
+background-color: rgb(244, 176, 131);
+}
+#dolB
+{
+padding: 10px 0;
+float: left;
+width: 398px;
+margin: 0;
+border: 1px solid black;	
+background-color: rgb(123, 123, 123);
+}
+#dolC
+{
+padding: 10px 0;
+float: left;
+width: 398px;
+margin: 0;
+border: 1px solid black;	
+background-color: rgb(83, 129, 53);
+}
