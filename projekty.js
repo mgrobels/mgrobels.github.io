@@ -14,7 +14,9 @@ document.getElementById("projekty-button").addEventListener('click', function(){
 		+
 		'<a href="../BMI/index.html" target="_blank"><div class="small-projekt b"><p>KALKULATOR<br />BMI</p></div></a>'
 		+
-		'<a href="../ZADANIA/Zegar tyka/index.html" target="_blank"><div class="small-projekt r"><p>ZEGAR<br />TYKA</p></div></a>')
+		'<a href="../ZADANIA/Zegar tyka/index.html" target="_blank"><div class="small-projekt r"><p>ZEGAR<br />TYKA</p></div></a>'
+		+
+		'<a href="../ZADANIA/Zadanie 4/index.html" target="_blank"><div class="small-projekt r"><p>ZGADNIJ<br />LICZBĘ</p></div></a>')
 		
 		$('#projekty-naglowek').addClass('projekty-naglowek');
 		$('#projekty-naglowek').html('<h2>PROJEKTY</h2>');
