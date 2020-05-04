@@ -98,7 +98,7 @@ function poddaj()
 
 function bingo()
 {
-	if(liczbaProb==0)liczbaProb=1;
+	liczbaProb++;
 	document.getElementById("wprowadzLiczbe").remove();
 	document.getElementById("podsumowanie").remove();
 	document.getElementById("wynik").innerHTML = "<p id=\"wynik\">Wylosowaną liczbą była liczba: <b>"+wylosowanaLiczba+"</b></p><p id=\"iloscProb\">Udało Ci się ją zgadnąć za<b> "+liczbaProb+"</b> razem</p><button id=\"odswiez\">SPRÓBUJ PONOWNIE</button>";
