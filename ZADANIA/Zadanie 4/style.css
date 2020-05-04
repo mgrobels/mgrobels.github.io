@@ -1,0 +1,136 @@
+body
+{
+	background-color: rgb(60,60,60);
+	font-family: monospace;
+}
+
+main
+{
+	border: solid 2px black;
+	border-radius: 5px;
+	margin: 30vh auto 0 auto;
+	width: 600px;
+	background-color: white;
+	padding: 20px;
+	text-align: center;
+}
+
+main
+{
+	transform: scale(1.2);
+}
+
+h1
+{
+	color: green;
+	text-shadow: 0px 0px 10px rgb(84, 83, 83);
+}
+
+button
+{
+	font-family: monospace;
+}
+
+button:focus
+{
+	outline-width: 0
+}
+
+button#start
+{
+	background-color: rgb(200,200,200);
+	padding: 10px 5px;
+	font-weight: bold;
+}
+
+button.przedzial
+{
+	background-color: rgb(220,220,220);
+	padding: 8px 3px;
+	margin: 0 10px;
+}
+
+button#sprawdz
+{
+	display: block;
+	background-color: rgb(200,200,200);
+	padding: 10px 15px;
+	font-weight: bold;
+	font-family: monospace;
+	margin: 0 auto;
+}
+
+input#liczba
+{
+	text-align: center;
+	font-family: monospace;
+	font-size: 32px;
+}
+
+button#poddaj
+{
+	background-color: rgb(154, 11, 11);
+	color: white;
+	padding: 5px 15px;
+	font-weight: bold;
+	font-family: monospace;
+	margin-top: 25px;
+	margin-left: 50px;
+}
+
+p#wynik
+{
+	font-size: 24px;
+}
+
+p#iloscProb
+{
+	font-size: 18px;
+}
+
+button#odswiez
+{
+	background-color: rgb(0, 93, 128);
+	color: white;
+	padding: 10px 25px;
+	font-weight: bold;
+	font-family: monospace;
+}
+
+p#podsumowanieProb
+{
+	font-size: 18px;
+	display: inline;
+}
+
+input#liczba
+{
+	border-width: 0px 0px 2px 0px;
+	border-color: black;
+	transition: background-color .5s ease;
+	margin-bottom: 10px;
+}
+
+input#liczba:focus
+{
+	background-color: rgb(194, 220, 159);
+	box-shadow: inset 0px 0px 5px 0px black;
+	outline-width: 0
+}
+
+.fadeIn {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
