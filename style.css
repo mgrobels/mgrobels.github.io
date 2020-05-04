@@ -67,6 +67,7 @@ body
 {
 	border-radius: 50%;
 	overflow: hidden;
+	margin-bottom: 50px;
 }
 
 .small-container p, .small-projekt p
