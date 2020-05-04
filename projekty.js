@@ -16,7 +16,7 @@ document.getElementById("projekty-button").addEventListener('click', function(){
 		+
 		'<a href="../ZADANIA/Zegar tyka/index.html" target="_blank"><div class="small-projekt r"><p>ZEGAR<br />TYKA</p></div></a>'
 		+
-		'<a href="../ZADANIA/Zadanie 4/index.html" target="_blank"><div class="small-projekt r"><p>ZGADNIJ<br />LICZBĘ</p></div></a>'
+		'<a href="../ZADANIA/Zadanie 4/index.html" target="_blank"><div class="small-projekt g"><p>ZGADNIJ<br />LICZBĘ</p></div></a>'
 		+
 		'<a href="#" target="_blank"><div class="small-projekt r"><p></p></div></a>'
 		+
