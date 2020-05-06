@@ -3,39 +3,90 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title>Michał Grobelski - Projekty GitHub</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="stylesheet" href="css/all.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<title>Michał Grobelski - GitHub</title>
+		<link type="text/css" rel="stylesheet" href="style.css">
 	</head>
 	
-	<body>
-		<video autoplay muted loop id="background-video">
-			<source src="background-video.mp4" type="video/mp4">
-		</video>
-		<div id="container" class="fade-in">
-		<br />
-			<div id="title"><h1>Michał Grobelski - Projekty GitHub</h1></div>
+	<body onload="zegar(); kolor();" >
+		<nav>
 		
-			<div class="small-container">
-				<i class="fas fa-user-tie"></i>
-				<p>O mnie</p>
+			<div id="menu">
+				<ul class="menu">
+						<li><a href="#" id="stronaGlowna">Strona główna</a></li>
+						<li><a href="#" id="projektyMenu">Projekty</a></li>
+						<li><a href="#" id="zadaniaMenu">Zadania</a></li>
+						<li><a href="#" id="oMnieMenu">O mnie</a></li>
+						<li><a href="#" id="kontaktMenu">Kontakt</a></li>
+				</ul>
 			</div>
+				
+			<div id="tytul">Michał Grobelski - GitHub</div>
+				
+			<div id="zegar"></div>
 			
-			<a id="projekty-link"><div class="small-container" id="projekty-button">
-				<i class="fas fa-folder-open"></i>
-				<p>Projekty</p>
-			</div></a>
-			
-			<div class="small-container">
-				<i class="fas fa-address-card"></i>
-				<p>CV</p>
-			</div>
-			
-			<div id="projekty"></div>
-		</div>
+		</nav>
+		<main id="container">
 		
-		<script src="projekty.js"></script>
+			<section id="startSekcja">
+				<div id="opcjeTlo"><button id="tempo">TEMPO x2</butto></div>
+				<section id="startSekcjaContainer">
+						<p>
+							<img id="opcjeIkona" class="ikona" src="https://img.icons8.com/material-two-tone/48/000000/gear.png"/><br />
+							<span>Cześć!</span><br />
+							Nazywam się Michał Grobelski, a to moja strona internetowa na github.com.<br />
+							Jeżeli chcesz dowiedzieć się więcej o mnie naciśnij.<br />
+							<button id="oMnieButton">O mnie</button>
+						</p>
+						<p id="zmianaKoloru">
+							<span class="helloworld">H</span><span class="helloworld">e</span><span class="helloworld">l</span><span class="helloworld">l</span><span class="helloworld">o</span>  <span class="helloworld">w</span><span class="helloworld">o</span><span class="helloworld">r</span><span class="helloworld">l</span><span class="helloworld">d</span><span class="helloworld">!</span>
+						</p>
+						<p>
+							Zamieszczam tutaj moje projekty, jak i zadania wykonane z użyciem javascript.<br />
+							Jeżeli chcesz je zobaczyć naciśnij odpowiedni przycisk.<br />
+							<button id="projektyButton">Projekty</button><button id="zadaniaButton">Zadania</button>
+						</p>
+				</section>
+			</section>
+			
+			<section id="zadaniaSekcja">
+				<header class="tytulSekcji">Zadania</header>
+				<div id="zadania">
+				<a class="zadanieProjekt" href="/ZADANIA/Zegar tyka/">Zegar tyka</a>
+				<a class="zadanieProjekt" href="/ZADANIA/Zadanie 4/">Zgadnij liczbę</a>
+				</div>
+			</section>
+			
+			<section id="projektySekcja">
+				<header class="tytulSekcji">Projekty</header>
+				<div id="projekty">
+				<a class="zadanieProjekt" href="/WWW 03.2020 DIETA/">Kalkulator diety</a>
+				<a class="zadanieProjekt" href="/BMI/">Kalkulator BMI</a>
+				</div>
+			</section>
+			
+			<section id="oMnieSekcja">
+				<header class="tytulSekcji">O mnie</header>
+				<img src="ja.png" />
+				<h3>Nazywam się Michał Grobelski, mam <span id="mojWiek"></span>lat i uczęszczam do technnikum infromatycznego w ZSOiZ w Trzemesznie.</h3>
+				<p>W swojej "karierze" stworzyłem kilka stron HTML jednak przeważnie na gotowym CMS. Moją pasją jest poznawanie nowym możliwości CSS i JS, które są praktycznie nieograniczone. Z każą chwilą poświęconą naucę, uświadamiam sobie jak mało potrafię i ile jest jeszcze przede mną. Chciałbym po skończeniu technikum pójść na studnia programistyczne, a w przyszłości znaleźć zdalną pracę polegającą na programowaniu. Moim marzeniem jest posiadać pracę, w której przy okazji mógłbym zwiedzać świat!</p>
+				<button id="kontaktButton">Kontakt</button>
+			</section>
+			
+			<section id="kontaktSekcja">
+				<header class="tytulSekcji">Kontakt</header>
+				<p>Jeżeli masz jakieś uwagi, wskazówki, pytania, pisz śmiało, szczególnie na Facebook-u. Zazwyczaj odpowiadam bardzo szybko, ale czas odpowiedzi może wydłużyć się do 24h.</p><hr />
+				<a href="https://www.facebook.com/mgrobels" target="_blank"><img class="ikona" src="https://img.icons8.com/doodle/48/000000/facebook-new.png"/></a>
+				<a href="https://www.instagram.com/mgrobels/" target="_blank"><img class="ikona" src="https://img.icons8.com/doodle/48/000000/instagram-new.png"/></a><br />
+				<div style="display:flex; align-items: center; justify-content: center;"><img src="https://img.icons8.com/material-two-tone/24/000000/gmail.png"/><p>grobelskimichal@gmail.com</p></div>
+				<div style="display:flex; align-items: center; justify-content: center;"><img src="https://img.icons8.com/android/24/000000/phone.png"/><p>782 071 046</p></div>
+			</section>
+			
+		</main>
+		
+		<footer id="stopka" class="absolut">
+			<p id="stopka">Michał Grobelski &copy; <span id="aktualnyRok"></span></p>
+		</footer>
+		<script src="script.js"></script>
 	</body>
 	
 </html>
