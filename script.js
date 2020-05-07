@@ -87,7 +87,7 @@ document.getElementById("opcjeIkona").addEventListener("click",function(){if(doc
 
 document.getElementById("tempoDown").addEventListener("click",function(){if(kolorCzas==100){kolorCzas=5000;document.getElementById("poziomTempa").innerHTML = "STOP";}else if(kolorCzas==50){kolorCzas=100;document.getElementById("poziomTempa").innerHTML = "TEMPO x1";}else if(kolorCzas==1){kolorCzas=50;document.getElementById("poziomTempa").innerHTML = "TEMPO x2";}});
 
-document.getElementById("tempoUp").addEventListener("click",function(){if(kolorCzas==5000){kolorCzas=100;document.getElementById("TEMPO x1").innerHTML = "STOP";}else if(kolorCzas==100){kolorCzas=50;document.getElementById("poziomTempa").innerHTML = "TEMPO x2";}else if(kolorCzas==50){kolorCzas=1;document.getElementById("poziomTempa").innerHTML = "TEMPO x100";}});
+document.getElementById("tempoUp").addEventListener("click",function(){if(kolorCzas==5000){kolorCzas=100;document.getElementById("poziomTempa").innerHTML = "TEMPO x1";}else if(kolorCzas==100){kolorCzas=50;document.getElementById("poziomTempa").innerHTML = "TEMPO x2";}else if(kolorCzas==50){kolorCzas=1;document.getElementById("poziomTempa").innerHTML = "TEMPO x100";}});
 
 
 function oMnie()
