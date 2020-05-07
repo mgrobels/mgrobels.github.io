@@ -85,7 +85,10 @@ document.getElementById("stronaGlowna").addEventListener("click",function(){stro
 
 document.getElementById("opcjeIkona").addEventListener("click",function(){if(document.getElementById("opcjeTlo").style.display == "block")document.getElementById("opcjeTlo").style.display = "none";else document.getElementById("opcjeTlo").style.display = "block";});
 
-document.getElementById("tempo").addEventListener("click",function(){if(kolorCzas==100){kolorCzas=50;document.getElementById("tempo").innerHTML = "TEMPO x100";document.getElementById("tempo").style.color = "red";}else if(kolorCzas==50){kolorCzas=1;document.getElementById("tempo").innerHTML = "STOP";document.getElementById("tempo").style.color = "black";}else if(kolorCzas==1){kolorCzas=5000;document.getElementById("tempo").innerHTML = "TEMPO x1";}else {kolorCzas=100;document.getElementById("tempo").innerHTML = "TEMPO x2";}});
+document.getElementById("tempoDown").addEventListener("click",function(){if(kolorCzas==100){kolorCzas=5000;document.getElementById("poziomTempa").innerHTML = "STOP";}else if(kolorCzas==50){kolorCzas=100;document.getElementById("poziomTempa").innerHTML = "TEMPO x1";}else if(kolorCzas==1){kolorCzas=50;document.getElementById("poziomTempa").innerHTML = "TEMPO x2";}});
+
+document.getElementById("tempoUp").addEventListener("click",function(){if(kolorCzas==5000){kolorCzas=100;document.getElementById("TEMPO x1").innerHTML = "STOP";}else if(kolorCzas==100){kolorCzas=50;document.getElementById("poziomTempa").innerHTML = "TEMPO x2";}else if(kolorCzas==50){kolorCzas=1;document.getElementById("poziomTempa").innerHTML = "TEMPO x100";}});
+
 
 function oMnie()
 {
