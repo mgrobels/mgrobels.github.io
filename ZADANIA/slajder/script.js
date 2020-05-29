@@ -61,12 +61,12 @@ document.getElementById('gear').addEventListener("click",function(){
 });
 
 document.getElementById('ok').addEventListener("click", function(){
-    if(document.getElementById("czasZmiany").value>100)
+    if(document.getElementById("czasZmiany").value>1500)
     {
         czas=document.getElementById("czasZmiany").value;
         zmianaNaZadanie(i-1);
     }
-    else alert("WPROWADŹ WARTOŚĆ WIĘKSZĄ OD 100ms!");
+    else alert("WPROWADŹ WARTOŚĆ WIĘKSZĄ OD 1500ms!");
 });
 
 document.getElementById('home').addEventListener("click",function(){window.location.href="https://mgrobels.github.io/";});
