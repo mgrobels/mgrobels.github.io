@@ -135,3 +135,5 @@ document.getElementById("projektySekcja").style.display = "none";
 document.getElementById("zadaniaSekcja").style.display = "none";
 document.getElementById("opcjeTlo").style.display = "none";
 }
+
+document.getElementById("zadania").lastElementChild.innerHTML = "<p><b>NEW </b>"+document.getElementById("zadania").lastElementChild.innerHTML+"</p>";document.getElementById("projekt").lastElementChild.innerHTML = "<p><b>NEW </b>"+document.getElementById("projekt").lastElementChild.innerHTML+"</p>";
