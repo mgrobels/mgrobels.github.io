@@ -3,12 +3,6 @@ let czas=3000;
 let zmianaSlajduCzas;
 let zabezpieczenie=true;
 
-document.getElementById('slajder').style.backgroundImage = 'url(slajd1'.jpg)';
-document.getElementById('slajder').style.backgroundImage = 'url(slajd2'.jpg)';
-document.getElementById('slajder').style.backgroundImage = 'url(slajd3'.jpg)';
-document.getElementById('slajder').style.backgroundImage = 'url(slajd4'.jpg)';
-document.getElementById('slajder').style.backgroundImage = 'url(slajd5'.jpg)';
-
 function zmiana()
 {
 zabezpieczenie=false;
