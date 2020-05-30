@@ -17,6 +17,11 @@ header
 }
 main
 {
+    background-image: url(slajd5.jpg);
+    background-image: url(slajd4.jpg);
+    background-image: url(slajd3.jpg);
+    background-image: url(slajd2.jpg);
+    background-image: url(slajd1.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: auto;
