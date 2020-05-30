@@ -17,6 +17,7 @@ header
 }
 main
 {
+    background-color: black;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: auto;
