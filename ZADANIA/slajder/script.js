@@ -1,5 +1,5 @@
 let i=1;
-let czas=3000;
+let czas=4500;
 let zmianaSlajduCzas;
 let zabezpieczenie=true;
 
