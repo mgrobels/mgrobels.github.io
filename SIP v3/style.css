@@ -27,15 +27,14 @@ body
 
 .tytul
 {
-    transition: text-shadow .5s ease;
     margin-left: 100px;
 }
 
 .tytul strong
 {
     font-size: 1.5rem;
-    margin-right: 20px;
     color: white;
+    transition: text-shadow .5s ease;
 }
 
 .tytul p
@@ -43,7 +42,7 @@ body
     color: rgb(200,200,200);
 }
 
-.tytul:hover
+.tytul strong:focus
 {
     cursor: pointer;
     text-shadow: 0 0 4px black;
@@ -62,7 +61,7 @@ body
     position: relative;
 }
 
-.menu ul>li:hover
+.menu ul>li:focus
 {
     cursor: pointer;
 }
@@ -80,7 +79,7 @@ body
   transition: all 0.3s ease-in-out;
 }
 
-.menu ul>li:hover:before 
+.menu ul>li:focus:before 
 {
     visibility: visible;
     width: 100%;
@@ -170,7 +169,7 @@ body
     order: 3;
 }
 
-#nowePosty .post:hover
+#nowePosty .post:focus
 {
     transform: scale(1.1);
     cursor: pointer;
@@ -270,7 +269,7 @@ hr
     margin: 0 0 20px 0;
 }
 
-.postRaporty:hover
+.postRaporty:focus
 {
     opacity: 1;
     box-shadow: 0 0 10px -3px black;
@@ -320,7 +319,7 @@ hr
     margin: 0 0 20px 0;
 }
 
-.postAnalizy:hover
+.postAnalizy:focus
 {
     opacity: 1;
     box-shadow: 0 0 10px -3px black;
@@ -364,7 +363,7 @@ hr
 	font-weight: bold;
 }
 
-#Raporty button:hover
+#Raporty button:focus
 {
     color: white;
     background-color: maroon;
@@ -385,7 +384,7 @@ hr
 	font-weight: bold;
 }
 
-#Analizy button:hover
+#Analizy button:focus
 {
     color: white;
     background-color: rgb(39, 39, 39);
@@ -429,7 +428,7 @@ hr
     height: 150px;
 }
 
-#Ikony article:hover
+#Ikony article:focus
 {
     opacity: 1;
     box-shadow: 0 0 10px -3px black;
@@ -437,17 +436,17 @@ hr
     transform: scale(1.1);
 }
 
-#Ikony article:nth-child(1):hover
+#Ikony article:nth-child(1):focus
 {
     border-color: goldenrod;
 }
 
-#Ikony article:nth-child(2):hover
+#Ikony article:nth-child(2):focus
 {
     border-color: indianred;
 }
 
-#Ikony article:nth-child(3):hover
+#Ikony article:nth-child(3):focus
 {
     border-color: deepskyblue;
 }
@@ -546,7 +545,7 @@ hr
     color: white;
 }
 
-#Szkolenia ul>li:hover
+#Szkolenia ul>li:focus
 {
     background-color: rgba(10, 92, 193,0.75);
     color: white;
@@ -555,7 +554,7 @@ hr
     text-shadow: 0 0 3px black;
 }
 
-#Szkolenia ul>li:first-child:hover
+#Szkolenia ul>li:first-child:focus
 {
     cursor: default;
     background-color: rgb(0, 82, 152);
@@ -578,7 +577,7 @@ hr
     transition: background-color .5s ease, color .5s ease, box-shadow .5s ease, text-shadow .5s ease;
 }
 
-#Szkolenia ul>li>ol>li:hover
+#Szkolenia ul>li>ol>li:focus
 {
     background-color: rgb(10, 92, 220);
     color: white;
@@ -614,7 +613,7 @@ hr
     margin: 0 0 20px 0;
 }
 
-.postBezpieczenstwo:hover
+.postBezpieczenstwo:focus
 {
     opacity: 1;
     box-shadow: 0 0 10px -3px black;
@@ -691,7 +690,7 @@ hr
     margin: 0 0 20px 0;
 }
 
-.postTurystykaMiedzynarodowa:hover
+.postTurystykaMiedzynarodowa:focus
 {
     opacity: 1;
     box-shadow: 0 0 10px -3px black;
@@ -759,7 +758,7 @@ hr
     height: 150px;
 }
 
-#TurystykaIkony article:hover
+#TurystykaIkony article:focus
 {
     opacity: 1;
     box-shadow: 0 0 10px -3px black;
@@ -782,7 +781,7 @@ hr
     font-weight: bold;
 }
 
-#TurystykaMiedzynarodowa button:hover
+#TurystykaMiedzynarodowa button:focus
 {
     color: white;
     background-color: rgb(0,128,0);
@@ -830,7 +829,7 @@ hr
     margin: 0 0 20px 0;
 }
 
-.postTurystykaPolska:hover
+.postTurystykaPolska:focus
 {
     opacity: 1;
     box-shadow: 0 0 10px -3px black;
@@ -874,7 +873,7 @@ hr
     font-weight: bold;
 }
 
-#TurystykaPolska button:hover
+#TurystykaPolska button:focus
 {
     color: white;
     background-color: rgb(0,128,0);
@@ -935,7 +934,7 @@ hr
     margin: 0 0 20px 0;
 }
 
-.postMedia:hover
+.postMedia:focus
 {
     opacity: 1;
     box-shadow: 0 0 10px -3px black;
@@ -1044,7 +1043,7 @@ hr
     margin: 0 0 20px 0;
 }
 
-.postRekomendacje:hover
+.postRekomendacje:focus
 {
     opacity: 1;
     box-shadow: 0 0 10px -3px black;
@@ -1081,7 +1080,7 @@ hr
 	padding: 50px 0 60px 0;
 }
 
-#stopkaSrodek div:hover
+#stopkaSrodek div:focus
 {
 	cursor: pointer;
 }
@@ -1117,9 +1116,12 @@ hr
 		width: 49%;
 		height: 500px;
     }
+    .postTurystykaPolska:last-child {
+        margin: 0 auto;
+      }
     .postTurystykaPolska h3
 	{
-        font-size: 1.5rem;
+        font-size: 1.75rem;
 	}
 	.postTurystykaPolska img
 	{
@@ -1132,7 +1134,7 @@ hr
     }
     .postTurystykaMiedzynarodowa h3
 	{
-        font-size: 1.5rem;
+        font-size: 1.75rem;
 	}
 	.postTurystykaMiedzynarodowa img
 	{
@@ -1166,7 +1168,7 @@ hr
     }
     .postRaporty h3
 	{
-        font-size: 1.5rem;
+        font-size: 1.75rem;
 	}
 	.postRaporty img
 	{
@@ -1180,7 +1182,7 @@ hr
     }
     .postAnalizy h3
 	{
-        font-size: 1.5rem;
+        font-size: 1.75rem;
 	}
 	.postAnalizy img
 	{
@@ -1272,7 +1274,7 @@ hr
 		font-weight: bold;
 		font-size: 2rem;
     }
-    #nowePosty .post:hover
+    #nowePosty .post:focus
     {
         transform: scale(1.025);
     }
@@ -1358,7 +1360,7 @@ hr
     }
     .postBezpieczenstwo h3
     {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
     button
     {
@@ -1401,4 +1403,44 @@ hr
         text-align: center;
         margin: 15px 0;
     }
+    .tytul strong
+    {
+        font-size: 3rem;
+    }
+    .tytul p
+    {
+        display: none;
+    }
+    #DzienBezpieczenstwa h1
+    {
+        font-size: 4.5rem;
+    }
+    .statystyka h2
+    {
+        font-size: 5rem;
+    }
+    .statystyka h4
+    {
+        font-size: 1.75rem;
+    }
+    .statystyka img
+    {
+        height: 150px;
+    }
+    .tytulMobile
+    {
+        display: block !important;
+
+    }
+    .tytul
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+    }
+}
+.tytulMobile
+{
+    display: none;
 }
