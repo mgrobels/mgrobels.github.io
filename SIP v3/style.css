@@ -1247,7 +1247,7 @@ hr
 	.postBezpieczenstwo img
 	{
 		height: 65%;
-	}
+    }
 	#nowePosty .post
 	{
 		width: 100%;
@@ -1271,7 +1271,11 @@ hr
 	{
 		font-weight: bold;
 		font-size: 2rem;
-	}
+    }
+    #nowePosty .post:hover
+    {
+        transform: scale(1.025);
+    }
 	#MediaONas
 	{
 		width: 100%;
@@ -1345,7 +1349,7 @@ hr
     }
     .fb-page
     {
-        width: 500px;
+        max-width: 100%;
     }
     #MediaONas h2
     {
@@ -1355,5 +1359,46 @@ hr
     .postBezpieczenstwo h3
     {
         font-size: 1.5rem;
+    }
+    button
+    {
+        font-size: 1.5rem;
+        padding: 1.5rem;
+        height: unset !important;
+        width: unset !important;
+    }
+    .postMedia h3
+    {
+        font-size: 1.6rem;
+    }
+    .postMedia h4
+    {
+        font-size: 1.2rem;
+    }
+    .postRekomendacje
+    {
+        height: 250px;
+    }
+    .postRekomendacje h4
+    {
+        font-size: 1.2rem;
+    }
+    #stopka
+    {
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    #stopkaSrodek
+    {
+        padding: 0;
+    }
+    #stopka div
+    {
+        width: 100%;
+        text-align: center;
+        margin: 15px 0;
     }
 }
