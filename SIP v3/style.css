@@ -664,12 +664,6 @@ hr
     float: left;
 }
 
-#TurystykaIkony
-{
-    width: 25%;
-    float: right;
-}
-
 #TurystykaMiedzynarodowaPostyFlex
 {
     display: flex;
@@ -727,6 +721,16 @@ hr
     color: rgb(109, 109, 109)
 }
 
+
+#TurystykaIkony
+{
+    width: 25%;
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 #TurystykaIkony article
 {
     border: 1px solid rgb(200,200,200);
@@ -734,6 +738,7 @@ hr
     background-color: white;
     box-sizing: border-box;
     height: 300px;
+    width: 100%;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -1101,12 +1106,16 @@ hr
 	color: gray;
 }
 
-@media only screen and (max-width: 1200px)
+@media only screen and (max-width: 1000px)
 {
+    #TurystykaPolska h2
+    {
+        font-size: 3rem;
+    }
 	.postTurystykaPolska
 	{
 		width: 49%;
-		height: 300px;
+		height: 500px;
 	}
 	.postTurystykaPolska img
 	{
@@ -1115,7 +1124,7 @@ hr
 	.postTurystykaMiedzynarodowa
 	{
 		width: 49%;
-		height: 300px;
+		height: 500px;
 	}
 	.postTurystykaMiedzynarodowa img
 	{
@@ -1126,7 +1135,11 @@ hr
 		float: none;
 		width: 100%;
 		clear: both;
-	}
+    }
+    #TurystykaMiedzynarodowa h2
+    {
+        font-size: 3rem;
+    }
 	#TurystykaIkony
 	{
 		float: none;
@@ -1135,14 +1148,13 @@ hr
 	}
 	#TurystykaIkony article
 	{
-		width: 50%;
+		width: 49%;
 		box-sizing: border-box;
-		float: left;
 	}
 	.postRaporty
 	{
 		width: 49%;
-		height: 300px;
+		height: 500px;
 	}
 	.postRaporty img
 	{
@@ -1151,7 +1163,7 @@ hr
 	.postAnalizy
 	{
 		width: 49%;
-		height: 300px;
+		height: 500px;
 	}
 	.postAnalizy img
 	{
@@ -1163,12 +1175,23 @@ hr
 		width: 100%;
 		clear: both;
 	}
+    #Raporty h2
+    {
+        text-align: center;
+        font-size: 3rem;
+    }
 	#Analizy
 	{
 		float: none;
 		width: 100%;
 		clear: both;
-	}
+    }
+    #Analizy h2
+    {
+        text-align: center;
+        font-size: 3rem;
+        margin-top: 3rem;
+    }
 	#Ikony
 	{
 		display: block;
@@ -1183,17 +1206,28 @@ hr
 	#Szkolenia
 	{
 		width:100%;
-	}
+    }
+    #Szkolenia h2
+    {
+        text-align: center;
+        font-size: 3rem;
+    }
 	#Bezpieczenstwo
 	{
 		width: 100%;
-	}
+    }
+    #Bezpieczenstwo h2
+    {
+        text-align: center;
+        font-size: 3rem;
+        margin-top: 3rem;
+    }
 	#nowePosty .post
 	{
 		width: 100%;
 		max-width: 100%;
-		margin-bottom: 25px;
-		height: 400px;
+		margin-bottom: 40px;
+		height: 600px;
 		opacity: 1;
 	}
 	#nowePosty .post:nth-child(1)
@@ -1201,23 +1235,23 @@ hr
 		width: 100%;
 		max-width: 100%;
 		order: 1;
-		height: 400px;
+		height: 600px;
 	}
 	#nowePosty .post img
 	{
 		height: 75%;
 	}
-	#nowePosty .post h3
+	#nowePosty .post h3, #nowePosty .post:nth-child(1) h3
 	{
 		font-weight: bold;
-		font-size: 1.15rem;
+		font-size: 1.5rem;
 	}
 	#MediaONas
 	{
 		width: 100%;
 		float: none;
 		clear: both;
-	}
+    }
 	#Facebook
 	{
 		width: 100%;
@@ -1248,10 +1282,42 @@ hr
 	.tytul
 	{
 		text-align: center;
-		margin: 0 auto;
+        margin: 0 auto;
 	}
 	.menu
 	{
 		display: none;
-	}
+    }
+    hr
+    {
+        margin: 100px 0;
+    }
+    #Facebook h2
+    {
+        font-size: 3rem;
+        margin-top: 3rem;
+    }
+    #Rekomendacje h2
+    {
+        font-size: 3rem;
+    }
+    #belkaGora
+    {
+        height: 6rem;
+    }
+    #Szkolenia ul>li
+    {
+        padding: 20px 0;
+        margin: 10px 0;
+        font-size: 1.5rem;
+    }
+    #Szkolenia ul>li>ol>li
+    {
+        padding: 20px 0;
+        margin: 10px 6px;
+    }
+    .fb-page
+    {
+        width: 500px;
+    }
 }
