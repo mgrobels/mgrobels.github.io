@@ -1110,12 +1110,16 @@ hr
 {
     #TurystykaPolska h2
     {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 	.postTurystykaPolska
 	{
 		width: 49%;
 		height: 500px;
+    }
+    .postTurystykaPolska h3
+	{
+        font-size: 1.5rem;
 	}
 	.postTurystykaPolska img
 	{
@@ -1125,6 +1129,10 @@ hr
 	{
 		width: 49%;
 		height: 500px;
+    }
+    .postTurystykaMiedzynarodowa h3
+	{
+        font-size: 1.5rem;
 	}
 	.postTurystykaMiedzynarodowa img
 	{
@@ -1138,7 +1146,7 @@ hr
     }
     #TurystykaMiedzynarodowa h2
     {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 	#TurystykaIkony
 	{
@@ -1155,15 +1163,24 @@ hr
 	{
 		width: 49%;
 		height: 500px;
+    }
+    .postRaporty h3
+	{
+        font-size: 1.5rem;
 	}
 	.postRaporty img
 	{
 		height: 65%;
-	}
+    }
+    
 	.postAnalizy
 	{
 		width: 49%;
 		height: 500px;
+    }
+    .postAnalizy h3
+	{
+        font-size: 1.5rem;
 	}
 	.postAnalizy img
 	{
@@ -1178,7 +1195,7 @@ hr
     #Raporty h2
     {
         text-align: center;
-        font-size: 3rem;
+        font-size: 4rem;
     }
 	#Analizy
 	{
@@ -1189,7 +1206,7 @@ hr
     #Analizy h2
     {
         text-align: center;
-        font-size: 3rem;
+        font-size: 4rem;
         margin-top: 3rem;
     }
 	#Ikony
@@ -1210,7 +1227,7 @@ hr
     #Szkolenia h2
     {
         text-align: center;
-        font-size: 3rem;
+        font-size: 4rem;
     }
 	#Bezpieczenstwo
 	{
@@ -1219,15 +1236,24 @@ hr
     #Bezpieczenstwo h2
     {
         text-align: center;
-        font-size: 3rem;
+        font-size: 4rem;
         margin-top: 3rem;
     }
+    .postBezpieczenstwo
+	{
+		width: 49%;
+		height: 500px;
+	}
+	.postBezpieczenstwo img
+	{
+		height: 65%;
+	}
 	#nowePosty .post
 	{
 		width: 100%;
 		max-width: 100%;
 		margin-bottom: 40px;
-		height: 600px;
+		height: 700px;
 		opacity: 1;
 	}
 	#nowePosty .post:nth-child(1)
@@ -1235,7 +1261,7 @@ hr
 		width: 100%;
 		max-width: 100%;
 		order: 1;
-		height: 600px;
+		height: 700px;
 	}
 	#nowePosty .post img
 	{
@@ -1244,7 +1270,7 @@ hr
 	#nowePosty .post h3, #nowePosty .post:nth-child(1) h3
 	{
 		font-weight: bold;
-		font-size: 1.5rem;
+		font-size: 2rem;
 	}
 	#MediaONas
 	{
@@ -1294,12 +1320,13 @@ hr
     }
     #Facebook h2
     {
-        font-size: 3rem;
+        font-size: 4rem;
         margin-top: 3rem;
     }
     #Rekomendacje h2
     {
-        font-size: 3rem;
+        font-size: 4rem;
+        font-size: 4rem;
     }
     #belkaGora
     {
@@ -1319,5 +1346,14 @@ hr
     .fb-page
     {
         width: 500px;
+    }
+    #MediaONas h2
+    {
+        font-size: 4rem;
+        margin-top: 3rem;
+    }
+    .postBezpieczenstwo h3
+    {
+        font-size: 1.5rem;
     }
 }
