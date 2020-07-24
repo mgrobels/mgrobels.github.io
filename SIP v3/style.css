@@ -118,6 +118,7 @@ body
     justify-content: space-between;
     align-items: center;
     animation: pokaz 2s;
+	flex-wrap: wrap;
 }
 
 @keyframes pokaz
@@ -130,12 +131,14 @@ body
 
 #nowePosty .post
 {
-    width: 340px;
-    height: 340px;
+    width: 350px;
+    height: 350px;
+	max-width:29%;
+	box-sizing: border-box;
     border: 1px solid rgb(200,200,200);
     border-top-width: 3px;
     background-color: white;
-    opacity: 0.9;
+    opacity: 0.8;
     transition: transform .5s ease, box-shadow .5s ease, opacity .5s ease;
     text-align: center;
     padding: 10px;
@@ -147,8 +150,10 @@ body
 
 #nowePosty .post:nth-child(1)
 {
-    width: 425px;
-    height: 400px;
+    width: 475px;
+    height: 475px;
+	max-width:40%;
+	box-sizing: border-box;
     order: 2;
     border-color: rgba(84, 168, 252,0.5);
     box-shadow: 0 0 5px -2px;
@@ -179,11 +184,19 @@ body
     height: 60%;
     box-shadow: 0 0 5px -0 gray;
     object-fit: cover;
+	margin-bottom: 5px;
+}
+
+#nowePosty .post:nth-child(1) h3
+{
+	font-weight: bold;
+    font-size: 1.15rem;
 }
 
 #nowePosty .post h3
 {
-    font-size: 1.15rem;
+	font-weight: normal;
+    font-size: 1rem;
     color: rgb(8, 117, 226);
 }
 
@@ -244,10 +257,10 @@ hr
     height: 300px;
     border: 1px solid rgba(102, 0, 0, 0.5);
 	border-top-width: 3px;
-	border-top-color: rgba(102, 0, 0, 1);
+	border-top-color: rgba(102, 0, 0, 0.8);
     background-color: white;
     opacity: 0.9;
-    transition: box-shadow .5s ease, opacity .5s ease, transform .5s ease;
+    transition: box-shadow .5s ease, opacity .5s ease, transform .5s ease, border .5s ease;
     text-align: center;
     padding: 5px;
     z-index: 4;
@@ -264,6 +277,7 @@ hr
     cursor: pointer;
     transform: scale(1.05);
     z-index: 5;
+	border-top-color: rgba(102, 0, 0, 1);
 }
 
 .postRaporty img
@@ -293,10 +307,10 @@ hr
     height: 300px;
     border: 1px solid rgb(170, 170, 170);
 	border-top-width: 3px;
-	border-top-color: rgb(39, 39, 39);
+	border-top-color: rgba(39, 39, 39,0.8);
     background-color: white;
     opacity: 0.9;
-    transition: box-shadow .5s ease, opacity .5s ease, transform .5s ease;
+    transition: box-shadow .5s ease, opacity .5s ease, transform .5s ease, border .5s ease;
     text-align: center;
     padding: 5px;
     z-index: 4;
@@ -313,6 +327,7 @@ hr
     cursor: pointer;
     transform: scale(1.05);
     z-index: 5;
+	border-top-color: rgb(39, 39, 39);
 }
 
 .postAnalizy img
@@ -441,6 +456,7 @@ hr
 {
 	width: 100%;
     max-width: 1200px;
+	box-sizing: border-box;
     margin: 0 auto;
     text-align: center;
     background-color: white;
@@ -585,10 +601,10 @@ hr
     height: 300px;
     border: 1px solid rgba(10, 92, 193, 0.5);
 	border-top-width: 3px;
-	border-top-color: rgba(10, 92, 193, 1);
+	border-top-color: rgba(10, 92, 193, 0.8);
     background-color: white;
     opacity: 0.9;
-    transition: box-shadow .5s ease, opacity .5s ease, transform .5s ease;
+    transition: box-shadow .5s ease, opacity .5s ease, transform .5s ease, border .5s ease;
     text-align: center;
     padding: 5px;
     z-index: 4;
@@ -605,6 +621,7 @@ hr
     cursor: pointer;
     transform: scale(1.05);
     z-index: 5;
+	border-top-color: rgb(10, 92, 193);
 }
 
 .postBezpieczenstwo h3
@@ -667,10 +684,10 @@ hr
     height: 300px;
     border: 1px solid rgba(0, 128, 0, 0.5);
 	border-top-width: 3px;
-	border-top-color: rgba(0, 128, 0, 1);
+	border-top-color: rgba(0, 128, 0, 0.8);
     background-color: white;
     opacity: 0.9;
-    transition: box-shadow .5s ease, opacity .5s ease, transform .5s ease;
+    transition: box-shadow .5s ease, opacity .5s ease, transform .5s ease, border .5s ease;
     text-align: center;
     padding: 5px;
     z-index: 4;
@@ -687,6 +704,7 @@ hr
     cursor: pointer;
     transform: scale(1.05);
     z-index: 5;
+	border-top-color: rgb(0, 128, 0);
 }
 
 .postTurystykaMiedzynarodowa img
@@ -794,10 +812,10 @@ hr
     height: 300px;
     border: 1px solid rgba(0, 128, 0, 0.5);
 	border-top-width: 3px;
-	border-top-color: rgba(0, 128, 0, 1);
+	border-top-color: rgba(0, 128, 0, 0.8);
     background-color: white;
     opacity: 0.9;
-    transition: box-shadow .5s ease, opacity .5s ease, transform .5s ease;
+    transition: box-shadow .5s ease, opacity .5s ease, transform .5s ease, border .5s ease;
     text-align: center;
     padding: 5px;
     z-index: 4;
@@ -814,6 +832,7 @@ hr
     cursor: pointer;
     transform: scale(1.05);
     z-index: 5;
+	border-top-color: rgb(0, 128, 0);
 }
 
 .postTurystykaPolska img
@@ -857,6 +876,7 @@ hr
     cursor: pointer;
 }
 
+
 #Media
 {
 	width: 100%;
@@ -897,10 +917,10 @@ hr
     height: 300px;
     border: 1px solid rgba(10, 73, 193, 0.5);
 	border-top-width: 3px;
-	border-top-color: rgb(10, 73, 193);
+	border-top-color: rgba(10, 73, 193, 0.8);
     background-color: white;
     opacity: 0.9;
-    transition: box-shadow .5s ease, opacity .5s ease, transform .5s ease;
+    transition: box-shadow .5s ease, opacity .5s ease, transform .5s ease, border .5s ease;
     text-align: center;
     padding: 5px;
     z-index: 4;
@@ -917,6 +937,7 @@ hr
     cursor: pointer;
     transform: scale(1.05);
     z-index: 5;
+	border-top-color: rgb(10, 73, 193);
 }
 
 .postMedia div
@@ -975,4 +996,261 @@ hr
     font-size: 0.9rem;
     color: rgb(109, 109, 109);
     font-weight: normal;
+}
+
+#Rekomendacje
+{
+	width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#Rekomendacje h2
+{
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+}
+
+#RekomendacjeFlex
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.postRekomendacje
+{
+    width: 16%;
+    box-sizing: border-box;
+    height: 200px;
+    border: 1px solid rgba(200, 200, 200, 0.5);
+	border-top-width: 3px;
+	border-top-color: rgba(200, 200, 200, 1);
+    background-color: white;
+    opacity: 0.9;
+    transition: box-shadow .5s ease, opacity .5s ease, transform .5s ease, border .5s ease;
+    text-align: center;
+    padding: 5px;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    margin: 0 0 20px 0;
+}
+
+.postRekomendacje:hover
+{
+    opacity: 1;
+    box-shadow: 0 0 10px -3px black;
+    cursor: pointer;
+    transform: scale(1.05);
+    z-index: 5;
+	border-color: rgb(10, 73, 193);
+}
+
+.postRekomendacje img
+{
+    width: 100%;
+	max-height: 150px;
+    margin-bottom: 5px;
+}
+
+.postRekomendacje h4
+{
+    font-size: 0.9rem;
+    color: rgb(90, 90, 90);
+	font-weight: normal;
+}
+
+#stopka
+{
+	background-color: rgb(26, 26, 26);
+	margin-top: 50px;
+}
+
+#stopkaSrodek
+{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 50px 0 60px 0;
+}
+
+#stopkaSrodek div:hover
+{
+	cursor: pointer;
+}
+
+#copywrite
+{
+	float: left;
+	color: white;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+#PolitykaPrywatnosci
+{
+	float: left;
+	color: gray;
+}
+
+#up
+{
+	float: right;
+	color: gray;
+}
+
+@media (max-width: 800px)
+{
+	.postTurystykaPolska
+	{
+		width: 49%;
+		height: 300px;
+	}
+	.postTurystykaPolska img
+	{
+		height: 65%;
+	}
+	.postTurystykaMiedzynarodowa
+	{
+		width: 49%;
+		height: 300px;
+	}
+	.postTurystykaMiedzynarodowa img
+	{
+		height: 65%;
+	}
+	#TurystykaMiedzynarodowaPosty
+	{
+		float: none;
+		width: 100%;
+		clear: both;
+	}
+	#TurystykaIkony
+	{
+		float: none;
+		width: 100%;
+		clear: both;
+	}
+	#TurystykaIkony article
+	{
+		width: 50%;
+		box-sizing: border-box;
+		float: left;
+	}
+	.postRaporty
+	{
+		width: 49%;
+		height: 300px;
+	}
+	.postRaporty img
+	{
+		height: 65%;
+	}
+	.postAnalizy
+	{
+		width: 49%;
+		height: 300px;
+	}
+	.postAnalizy img
+	{
+		height: 65%;
+	}
+	#Raporty
+	{
+		float: none;
+		width: 100%;
+		clear: both;
+	}
+	#Analizy
+	{
+		float: none;
+		width: 100%;
+		clear: both;
+	}
+	#Ikony
+	{
+		display: block;
+	}
+	#Ikony article
+	{
+		width: 100%;
+		clear: both;
+		box-sizing: border-box;
+		margin-bottom: 25px;
+	}
+	#Szkolenia
+	{
+		width:100%;
+	}
+	#Bezpieczenstwo
+	{
+		width: 100%;
+	}
+	#nowePosty .post
+	{
+		width: 100%;
+		max-width: 100%;
+		margin-bottom: 25px;
+		height: 400px;
+		opacity: 1;
+	}
+	#nowePosty .post:nth-child(1)
+	{
+		width: 100%;
+		max-width: 100%;
+		order: 1;
+		height: 400px;
+	}
+	#nowePosty .post img
+	{
+		height: 75%;
+	}
+	#nowePosty .post h3
+	{
+		font-weight: bold;
+		font-size: 1.15rem;
+	}
+	#MediaONas
+	{
+		width: 100%;
+		float: none;
+		clear: both;
+	}
+	#Facebook
+	{
+		width: 100%;
+		float: none;
+		clear: both;
+	}
+	#RekomendacjeFlex
+	{
+		flex-wrap: wrap;
+	}
+	.postRekomendacje
+	{
+		width: 33%;
+	}
+	#statystykaFlex
+	{
+		flex-wrap: wrap;
+	}
+	.statystyka
+	{
+		width: 49%;
+		margin-bottom: 25px;
+	}
+	#logo
+	{
+		height: 250px;
+	}
+	.tytul
+	{
+		text-align: center;
+	}
+	.menu
+	{
+		display: none;
+	}
 }
