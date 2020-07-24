@@ -1023,6 +1023,12 @@ hr
     justify-content: space-between;
 }
 
+
+.fb-page
+{
+    max-width: 100%;
+}
+
 .postRekomendacje
 {
     width: 16%;
@@ -1349,10 +1355,6 @@ hr
         padding: 20px 0;
         margin: 10px 6px;
     }
-    .fb-page
-    {
-        max-width: 100%;
-    }
     #MediaONas h2
     {
         font-size: 4rem;
@@ -1438,6 +1440,10 @@ hr
         justify-content: space-between;
         align-items: center;
         width: 90%;
+    }
+    #FB
+    {
+        transform: scale(1.4);
     }
 }
 .tytulMobile
