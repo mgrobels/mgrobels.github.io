@@ -46,13 +46,13 @@ header
     justify-content: center;
     flex-flow: column;
     text-align: center;
-    background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 2px, transparent 2px, transparent 100%);
-    background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 2px, transparent 2px, transparent 100%);
-    background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 2px, transparent 2px, transparent 100%);
-    background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 2px, transparent 2px, transparent 100%);
-    -webkit-background-size: 4px 4px;
-    -moz-background-size: 4px 4px;
-    background-size: 4px 4px;
+    background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,0), rgba(0,0,0,0) 2px, black 2px, black 100%);
+    background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,0), rgba(0,0,0,0) 2px, black 2px, black 100%);
+    background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,0), rgba(0,0,0,0) 2px, black 2px, black 100%);
+    background-image: repeating-radial-gradient(center center, rgba(0,0,0,0), rgba(0,0,0,0) 2px, black 2px, black 100%);
+    -webkit-background-size: 4px 3px;
+    -moz-background-size: 4px 3px;
+    background-size: 4px 3px;
     overflow: hidden;
 }
 
@@ -91,7 +91,7 @@ header img:hover
     opacity: 1;
 }
 
-#kontaktButtonABS
+#homeButtonABS
 {
     position: absolute;
     left: 0;
@@ -100,20 +100,20 @@ header img:hover
     text-align: center;
 }
 
-#homeButtonABS
+#oMnieButtonABS
 {
     position: absolute;
     left: 0;
-    bottom: -95vh;
+    bottom: 5vh;
     width: 100%;
     text-align: center;
 }
 
-#homeButtonABS2
+#kontaktButtonABS
 {
     position: absolute;
     left: 0;
-    bottom: -195vh;
+    bottom: 5vh;
     width: 100%;
     text-align: center;
 }
@@ -148,6 +148,7 @@ header img:hover
     padding: 0 0 10vh 0;
     box-sizing: border-box;
     text-align: center;
+    position: relative;
 }
 
 #oMnie img
@@ -177,6 +178,7 @@ header img:hover
     flex-flow: column;
     background-color: rgb(39, 39, 39);
     height: 100vh;
+    position: relative;
 }
 
 #licznikFlex
@@ -247,7 +249,7 @@ h2
     text-shadow: 0 0 20px black;
 }
 
-@media (max-width: 1000px)
+@media (max-width: 768px)
 {
     button
     {
