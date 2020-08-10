@@ -98,7 +98,7 @@ header img:hover
     opacity: 1;
 }
 
-#homeButtonABS
+#homeButtonABS, #kontaktButtonABS, #oMnieButtonABS
 {
     position: absolute;
     left: 0;
@@ -107,23 +107,6 @@ header img:hover
     text-align: center;
 }
 
-#oMnieButtonABS
-{
-    position: absolute;
-    left: 0;
-    bottom: 5vh;
-    width: 100%;
-    text-align: center;
-}
-
-#kontaktButtonABS
-{
-    position: absolute;
-    left: 0;
-    bottom: 5vh;
-    width: 100%;
-    text-align: center;
-}
 
 .kontaktButton, .djBoniiButton, .oMnieButton
 {
@@ -289,9 +272,9 @@ h2
         justify-content: center;
         padding: 1vh 1vw 10vh 1vw;
     }
-    #kontakt, #oMnie
+    #oMnieButtonABS, #kontaktButtonABS
     {
-        height: calc(var(--vh, 1vh) * 100) !important;
+        bottom: 10vh;
     }
 }
 
