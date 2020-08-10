@@ -24,8 +24,10 @@ body
 
 #djBonii
 {
-    min-width: 100vw;
-    min-height: 100vh;
+    height: 100%;
+    width: 177.77777778vh;
+    min-width: 100%;
+    min-height: 56.25vw;
 }
 
 #tloWideo
