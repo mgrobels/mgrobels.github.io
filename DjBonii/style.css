@@ -144,6 +144,7 @@ header img:hover
 #oMnie img
 {
     height: 30%;
+    max-width: 90%;
     transition: height .5s ease, box-shadow .5s ease, transform .5s ease;
 }
 
@@ -239,7 +240,7 @@ h2
     text-shadow: 0 0 20px black;
 }
 
-@media (max-width: 1000px)
+@media (max-width: 900px)
 {
     button
     {
@@ -247,7 +248,8 @@ h2
     }
     #oMnie img
     {
-        height: 20%;
+        max-height: 20%;
+        max-width: 90%;
     }
     h4
     {
