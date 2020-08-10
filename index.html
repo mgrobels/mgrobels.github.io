@@ -2,339 +2,63 @@
 <html lang="pl">
     <head>
         <meta charset="UTF-8">
-        <title>Security in practice - Bezpieczeństwo w praktyce</title>
-        <link type="text/css" href="style.css" rel="stylesheet">
-		<script src="https://unpkg.com/scrollreveal"></script>
+        <title>DJ BONII</title>
+        <link type="text/css" rel="stylesheet" href="style.css">
     </head>
     <body>
-        <nav id="belkaGora">
-            <div class="tytul">
-                <p><strong>Security in practice</strong>Bezpieczeństwo w praktyce</p>
+
+        <video id="djBonii" autoplay muted loop>
+            <source src="djbonii.mp4" type="video/mp4">
+        </video>
+
+        <header>
+            <h1 id="tytul">DJ BONII</h1>
+            <img id="volume" src="volumeOFF.png" alt="volume"/>
+        </header>
+
+        <div id="kontaktButtonABS">
+            <a href="#kontakt"><button id="kontaktButton">KONTAKT</button></a>
+            <a href="#oMnie"><button id="oMnieButton">O MNIE</button></a>
+        </div>
+
+        <section id="oMnie">
+            <h4>Błażej Dereziński</h4>
+            <img src="Bonii.jpg" alt="Bonii" />
+            <h2>Dj Bonii</h2>
+            <p>
+                Nazywam się Błażej i kocham muzykę, będę ją grać do końca życia.<br />
+                Zapewnia 100% dobrej muzyki i świetnej zabawy.<br />
+                Ze mną będziecie się bawić całą noc.
+            </p>
+            <div id="licznikFlex">
+                <section>
+                    <h6>ZADOWOLENI KLIENCI</h6>
+                    <h5 class="counter" data-target="100"></h5>
+                </section>
+                <section>
+                    <h6>ZAGRANE IMPREZY</h6>
+                    <h5 class="counter" data-target="29"></h5>
+                </section>
+                <section>
+                    <h6>ILOŚĆ DOBREJ MUZYKI</h6>
+                    <h5 class="counter" data-target="100"></h5>
+                </section>
             </div>
-            <div class="menu">
-                <ul>
-                    <li>Strona główna</li>
-                    <li>Nasz zespół</li>
-                    <li>Blog</li>
-                    <li>Rekomendacje</li>
-                    <li>O nas</li>
-                    <li>Kontakt</li>
-                </ul>
-            </div>
-        </nav>
-        <div id="logo"></div>
-        <section id="nowePosty">
-            <article class="post">
-                <img src="img/post1.jpg" />
-                <h3>Więzienie Camp Bucca i jego znaczenie dla powstania Państwa Islamskiego (ISIS)</h2>
-                <h4>20 lipca 2020</h4>
-            </article>
-            <article class="post">
-                <img src="img/post2.jpg" />
-                <h3>Mali – protesty społeczne i negocjacje z grupami zbrojnymi</h2>
-                <h4>3 lipca 2020</h4>
-            </article>
-            <article class="post">
-                <img src="img/post3.jpg" />
-                <h3>Polska dziennikarka wyjaśnia dlaczego producenci żywności i rolnicy nie chcą, żebyśmy wiedzieli, czym jest glifosat. Kim jest Żaneta Geltz i dlaczego to robi?</h2>
-                <h4>16 czerwca 2020</h4>
-            </article>
-        </section>
-
-        <hr />
-
-        <section id="RaportyAnalizy">
-            <section id="Raporty">
-                <h2>Raporty</h2>
-                <div id="RaportyFlex">
-                    <article class="postRaporty">
-                        <img src="img/raporty1.jpg" />
-                        <h3>Więzienie Camp Bucca i jego znaczenie dla powstania Państwa Islamskiego (ISIS)</h3>
-                        <h4>20 lipca 2020</h4>
-                    </article>
-                    <article class="postRaporty">
-                        <img src="img/raporty2.jpg" />
-                        <h3>Geneza konfliktu w Burkina Faso w latach 2014-2019</h3>
-                        <h4>26 maja 2020</h4>
-                    </article>
-                    <article class="postRaporty">
-                        <img src="img/raporty3.jpg" />
-                        <h3>Anders Breivik – co popchnęło go do mordu na własnych rodakach?</h3>
-                        <h4>28 kwietnia 2020</h4>
-                    </article>
-                    <article class="postRaporty">
-                        <img src="img/raporty4.jpg" />
-                        <h3>Masakra w szkole w Columbine… Czy polskie szkoły są bezpieczne?</h3>
-                        <h4>19 kwietnia 2020</h4>
-                    </article>
-                    <article class="postRaporty">
-                        <img src="img/raporty5.jpg" />
-                        <h3>Somalia. Od zalążków państwowości, przez kolonizację, dekolonizację, po dyktaturę</h3>
-                        <h4>23 stycznia 2020</h4>
-                    </article>
-                    <article class="postRaporty">
-                        <img src="img/raporty6.jpg" />
-                        <h3>Geneza powstania oraz ewolucja działalności terrorystycznej Al-Kaidy Islamskiego Magrebu (AQIM)</h3>
-                        <h4>13 listopada 2019</h4>
-                    </article>
-                </div>
-                <button>WIĘCEJ RAPORTÓW</button>
-            </section>
-            
-            <section id="Analizy">
-                <h2>Analizy</h2>
-                <div id="RaportyFlex">
-                    <article class="postAnalizy">
-                        <img src="img/analizy1.jpg" />
-                        <h3>Mali – protesty społeczne i negocjacje z grupami zbrojnymi</h3>
-                        <h4>3 lipca 2020</h4>
-                    </article>
-                    <article class="postAnalizy">
-                        <img src="img/analizy2.jpg" />
-                        <h3>Mali – porwanie lidera opozycji Soumaïlli Cisségo i walki pomiędzy JNIM a ISGS</h3>
-                        <h4>24 maja 2020</h4>
-                    </article>
-                    <article class="postAnalizy">
-                        <img src="img/analizy3.jpg" />
-                        <h3>Rwanda, konflikt niedokończony….</h3>
-                        <h4>5 maja 2020</h4>
-                    </article>
-                    <article class="postAnalizy">
-                        <img src="img/analizy4.jpg" />
-                        <h3>Task Force Takuba – nowe siły w rejonie Sahelu</h3>
-                        <h4>15 kwietnia 2020</h4>
-                    </article>
-                </div>
-                <button>WIĘCEJ ANALIZ</button>
-            </section>
-
-            <div style="clear: both;"></div>
-        </section>
-
-        <hr />
-
-        <section id="Ikony">
-            <article>
-                <img src="img/ikona1.png"/>
-                <h2>Projekt Afryka</h2>
-            </article>
-            <article>
-                <img src="img/ikona2.png"/>
-                <h2>Oferta szkoleniowa</h2>
-            </article>
-            <article>
-                <img src="img/ikona3.png"/>
-                <h2>Podmioty współpracujące</h2>
-            </article>
-        </section>
-
-        <hr />
-
-        <section id="DzienBezpieczenstwa">
-            <h1>DZIEŃ BEZPIECZEŃSTWA</h1>
-            <div id="statystykaFlex">
-                <div class="statystyka">
-                    <img src="img/school.png" />
-                    <h2 id="szkoly">27</h2>
-                    <h4>Przeszkolone szkoły</h4>
-                </div>
-                <div class="statystyka">
-                    <img src="img/team.png" />
-                    <h2 id="szkoly">11669</h2>
-                    <h4>Przeszkoleni uczniowie</h4>
-                </div>
-                <div class="statystyka">
-                    <img src="img/student.png">
-                    <h2 id="szkoly">1254</h2>
-                    <h4>Przeszkoleni nauczyciele</h4>
-                </div>
-                <div class="statystyka">
-                    <img src="img/man.png" />
-                    <h2 id="szkoly">339</h2>
-                    <h4>Przeszkoleni pracownicy szkół</h4>
-                </div>
+            <div id="homeButtonABS">
+                <a href="#djBonii"><button class="djBoniiButton">UP</button></a>
             </div>
         </section>
         
-        <hr />
-
-        <section id="SzkoleniaBezpieczenstwo">
-            <section id="Szkolenia">
-                <h2>Szkolenia</h2>
-                <ul>
-                    <li>DZIEŃ BEZPIECZEŃSTWA W SZKOLE
-                        <ol>
-                            <li>SZKOLENIE</li>
-                            <li>FILM</li>
-                        </ol>
-                    </li>
-                    <li>POLSKI SYSTEM KONTROLI EKSPORTU</li>
-                    <li>JAK DZIAŁA NATO</li>
-                    <li>BEZPIECZEŃSTWO W BIZNESIE</li>
-                    <li>BEZPIECZEŃSTWO TELEINFORMATYCZNE</li>
-                    <li>SZKOLENIE MEDYCZNE</li>
-                    <li>SZKOLENIA Z ZAKRESU CYBERBEZPIECZEŃSTWA</li>
-                    <li>DORADZTWO GOSPODARCZE OIN</li>
-                    <li>DOKUMENTACJA OIN – OGÓLNA</li>
-                    <li>RODO – AUDYT+DOK.</li>
-                    <li>RODO – SZKOLENIE</li>
-                </ul>
-            </section>
-
-            
-            <section id="Bezpieczenstwo">
-                <h2>Bezpieczeństwo w szkole</h2>     
-                <div id="BezpieczenstwoFlex">
-                    <article class="postBezpieczenstwo">
-                        <img src="img/bezpieczenstwo1.jpg" />
-                        <h3>Przygotowania do zamachu na szkołę w Rosji</h3>
-                        <h4>16 czerwca 2020</h4>
-                    </article>
-                    <article class="postBezpieczenstwo">
-                        <img src="img/bezpieczenstwo2.jpg" />
-                        <h3>Atak nożownika na szkołę w Słowacji – czy musiało do niego dojść…?</h3>
-                        <h4>14 czerwca 2020</h4>
-                    </article>
-                    <article class="postBezpieczenstwo">
-                        <img src="img/bezpieczenstwo3.jpg" />
-                        <h3>Masakra w szkole w Columbine… Czy polskie szkoły są bezpieczne?</h3>
-                        <h4>19 kwietnia 2020</h4>
-                    </article>
-                    <article class="postBezpieczenstwo">
-                        <img src="img/bezpieczenstwo4.jpg" />
-                        <h3>Bezpieczeństwo w szkołach – konferencja w Nietążkowie</h3>
-                        <h4>27 lutego 2020</h4>
-                    </article>
-                </div>
-            </section>
-
-            <div style="clear: both;"></div>
-        </section>
-    
-        <hr />
-
-        <section id="TurystykaMiedzynarodowa">
-            <h2>Turystyka międzynarodowa</h2>
-            <section id="TurystykaMiedzynarodowaPosty">
-                <div id="TurystykaMiedzynarodowaPostyFlex">
-                    <article class="postTurystykaMiedzynarodowa">
-                        <img src="img/turysytkamiedzynarodowa1.jpg" />
-                        <h3>Ghana. Kraj po prostu pozytywny</h3>
-                        <h4>20 Kwiecień 2020</h4>
-                    </article>
-                    <article class="postTurystykaMiedzynarodowa">
-                        <img src="img/turysytkamiedzynarodowa2.jpg" />
-                        <h3>Kazachstan – kraj piękny i różnorodny</h3>
-                        <h4>29 Sierpień 2019</h4>
-                    </article>
-                    <article class="postTurystykaMiedzynarodowa">
-                        <img src="img/turysytkamiedzynarodowa3.jpg" />
-                        <h3>Kirgistan – woda i góry w jednym</h3>
-                        <h4>29 Sierpień 2019</h4>
-                    </article>
-                    <article class="postTurystykaMiedzynarodowa">
-                        <img src="img/turysytkamiedzynarodowa4.jpg" />
-                        <h3>Rwanda – Park Narodowy Akagera</h3>
-                        <h4>29 Sierpień 2019</h4>
-                    </article>
-                    <article class="postTurystykaMiedzynarodowa">
-                        <img src="img/turysytkamiedzynarodowa5.jpg" />
-                        <h3>Gruzja – turystyka, doświadczenia i wnioski</h3>
-                        <h4>29 Sierpień 2019</h4>
-                    </article>
-                    <article class="postTurystykaMiedzynarodowa">
-                        <img src="img/turysytkamiedzynarodowa6.jpg" />
-                        <h3>Etiopia – pomiędzy stereotypami a rzeczywistością</h3>
-                        <h4>29 Sierpień 2019</h4>
-                    </article>
-                </div>
-            </section>
-            <section id="TurystykaIkony">
-                <article>
-                    <img src="img/filmy.png"/>
-                    <h2>Filmy</h2>
-                </article>
-                <article>
-                    <img src="img/zdjecia.png"/>
-                    <h2>Zdjęcia</h2>
-                </article>
-            </section>
-            <button>WIĘCEJ O TURYSTYCE</button>
-        </section>
-
-        <hr />
-
-        <section id="TurystykaPolska">
-            <h2>Turystyka w Polsce</h2>
-            <div id="TurystykaPolskaFlex">
-                <article class="postTurystykaPolska">
-                    <img src="img/turystykapolska1.jpg" />
-                    <h3>Piękno Podlasia – Architektura (film)</h3>
-                    <h4>15 czerwca 2020</h4>
-                </article>
-                <article class="postTurystykaPolska">
-                    <img src="img/turystykapolska2.jpg" />
-                    <h3>Piękno Podlasia – Religie Podlasia (film)</h3>
-                    <h4>15 czerwca 2020</h4>
-                </article>
-                <article class="postTurystykaPolska">
-                    <img src="img/turystykapolska3.jpg" />
-                    <h3>Piękno Podlasia – Przyroda (film)</h3>
-                    <h4>15 czerwca 2020</h4>
-                </article>
+        <section id="kontakt">
+            <h3>MANAGER</h3>
+            <h2>664 879 382</h2>
+            <div id="homeButtonABS2">
+                <a href="#djBonii"><button class="djBoniiButton">UP</button></a>
             </div>
-            <button>WIĘCEJ O POLSKIEJ TURYSTYCE</button>
         </section>
 
-        <hr />
+        <script src="funkcje.js">
+        </script>
 
-        <section id="Media">
-            <section id="MediaONas">
-                <h2>Media o nas</h2>
-                <div id="MediaONasFlex">
-                    <article class="postMedia">
-                        <div></div>
-                        <h3>Jak pandemia koronawirusa wpłynie na sytuację na świecie?</h3>
-                        <h4>Radio Plus</h4>
-                    </article>
-                    <article class="postMedia">
-                        <div></div>
-                        <h3>Był odpowiedzialny za bezpieczeństwo około 2 tys. żołnierzy z ponad 20 państw.</h3>
-                        <h4>Hipoalergiczni</h4>
-                    </article>
-                    <article class="postMedia">
-                        <div></div>
-                        <h3>Szkoły nie są bezpieczne. W Kielcach zastanawiano się, jak to poprawić</h3>
-                        <h4>Radio Kielce</h4>
-                    </article>
-                    <article class="postMedia">
-                        <div></div>
-                        <h3>Uzbrojeni w wiedzę</h3>
-                        <h4>Polska Zbrojna</h4>
-                    </article>
-                    <article class="postMedia">
-                        <div></div>
-                        <h3>Przygotuj się, zamiast żyć w strachu</h3>
-                        <h4>Hipoalergiczni</h4>
-                    </article>
-                    <article class="postMedia">
-                        <div></div>
-                        <h3>Informacja ≠ Manipulacja </h3>
-                        <h4>Radio Plus</h4>
-                    </article>
-                </div>
-            </section>
-            <section id="Facebook">
-                <h2>Facebook</h2>
-                <div id="fb-root"></div>
-                <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v7.0" nonce="T9GmRvXi"></script>
-                <div class="fb-page" data-href="https://www.facebook.com/Security-in-practice-104942687556759/" data-tabs="timeline" data-width="" data-height="620" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Security-in-practice-104942687556759/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Security-in-practice-104942687556759/">Security in practice</a></blockquote></div>
-            </section>
-        </section>
-
-    <script>
-		window.sr = ScrollReveal();
-		sr.reveal('section, hr', {delay: 100});
-	</script>
     </body>
 </html>
