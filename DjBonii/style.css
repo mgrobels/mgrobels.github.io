@@ -31,6 +31,7 @@ body
 #tloWideo
 {
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     overflow: hidden;
 }
 
@@ -39,8 +40,9 @@ header
     position: absolute;
     right: 0;
     bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+    width: 100vw;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -145,6 +147,7 @@ header img:hover
     flex-flow: column;
     background-color: rgb(26, 26, 26);
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     padding: 0 0 7vh 0;
     box-sizing: border-box;
     text-align: center;
@@ -178,6 +181,7 @@ header img:hover
     flex-flow: column;
     background-color: rgb(39, 39, 39);
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     position: relative;
 }
 
@@ -278,7 +282,6 @@ h2
     #oMnie
     {
         min-height: 100vh;
-        flex-wrap: wrap;
         overflow: hidden;
         justify-content: center;
         padding: 1vh 1vw 10vh 1vw;
