@@ -4,6 +4,17 @@ html
     user-select: none;
 }
 
+html::-webkit-scrollbar 
+{
+    display: none;
+}
+  
+html 
+{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 body
 {
     margin: 0;
@@ -13,11 +24,14 @@ body
 
 #djBonii
 {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+#tloWideo
+{
+    height: 100vh;
+    overflow: hidden;
 }
 
 header
@@ -130,24 +144,23 @@ header img:hover
     align-items: center;
     flex-flow: column;
     background-color: rgb(26, 26, 26);
-    margin-top: 100vh;
     height: 100vh;
     padding: 0 0 10vh 0;
     box-sizing: border-box;
     text-align: center;
-    flex-wrap: wrap;
 }
 
 #oMnie img
 {
     height: 30%;
-    transition: height .5s ease, box-shadow .5s ease;
+    transition: height .5s ease, box-shadow .5s ease, transform .5s ease;
 }
 
 #oMnie img:hover
 {
     cursor: pointer;
     box-shadow: 0 0 10px 0 black;
+    transform: scale(1.05);
 }
 
 .duzyBonii
@@ -215,6 +228,7 @@ h4
     margin: 0;
     color: rgb(170, 170, 170);
     text-shadow: 0 0 10px black;
+    letter-spacing: 5px;
 }
 
 h3
@@ -267,5 +281,9 @@ h2
     h5
     {
         font-size: 6rem !important;
+    }
+    #oMnie
+    {
+        padding: 0 2vw;
     }
 }
