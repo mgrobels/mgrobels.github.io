@@ -20,14 +20,16 @@ gra=!gra;
 
 document.getElementById("Bonii").addEventListener("click", function()
 {
-    if(duzyBonii==false)
+    if((duzyBonii==false)&&(window.innerWidth>1000))
     {
         document.getElementById("Bonii").classList.add("duzyBonii");
+        document.getElementById("licznikFlex").style.display="none";
         duzyBonii=!duzyBonii;
     }
     else 
     {
         document.getElementById("Bonii").classList.remove("duzyBonii");
+        document.getElementById("licznikFlex").style.display="flex";
         duzyBonii=!duzyBonii;
     }
 });

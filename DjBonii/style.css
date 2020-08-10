@@ -255,15 +255,6 @@ h2
     {
         font-size: 3rem !important;
     }
-    #licznikFlex
-    {
-        flex-direction: column;
-    }
-    #licznikFlex section
-    {
-        margin: 1rem 0;
-        width: 100%;
-    }
     #oMnie img
     {
         height: 20%;
@@ -278,14 +269,26 @@ h2
     }
     h6
     {
-        font-size: 3rem !important;
+        font-size: 2rem !important;
     }
     h5
     {
-        font-size: 6rem !important;
+        font-size: 4rem !important;
     }
     #oMnie
     {
-        padding: 0 2vw;
+        padding: 0 1vw;
+        min-height: 100vh;
+        flex-wrap: wrap;
+        overflow: hidden;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-height: 800px)
+{
+    #licznikFlex
+    {
+        display: none;
     }
 }
