@@ -1,6 +1,7 @@
 html
 {
     scroll-behavior: smooth;
+    user-select: none;
 }
 
 body
@@ -103,7 +104,7 @@ header img:hover
     text-align: center;
 }
 
-#kontaktButton, .djBoniiButton, #oMnieButton
+.kontaktButton, .djBoniiButton, .oMnieButton
 {
     border: 2px solid white;
     background-color: transparent;
@@ -115,7 +116,7 @@ header img:hover
     font-weight: bold;
 }
 
-#kontaktButton:hover, .djBoniiButton:hover, #oMnieButton:hover
+.kontaktButton:hover, .djBoniiButton:hover, .oMnieButton:hover
 {
     background-color: white;
     color: black;
@@ -134,11 +135,25 @@ header img:hover
     padding: 0 0 10vh 0;
     box-sizing: border-box;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 #oMnie img
 {
-    height: 20%;
+    height: 30%;
+    transition: height .5s ease, box-shadow .5s ease;
+}
+
+#oMnie img:hover
+{
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 black;
+}
+
+.duzyBonii
+{
+    position: absolute;
+    height: 80vh !important;
 }
 
 #kontakt
@@ -232,6 +247,10 @@ h2
     {
         margin: 1rem 0;
         width: 100%;
+    }
+    #oMnie img
+    {
+        height: 20%;
     }
     h4
     {
