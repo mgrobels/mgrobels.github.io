@@ -249,7 +249,7 @@ h2
     text-shadow: 0 0 20px black;
 }
 
-@media (max-width: 768px)
+@media (max-width: 1000px)
 {
     button
     {
